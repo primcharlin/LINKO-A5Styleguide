@@ -1,0 +1,447 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend', sans-serif;
+    
+    
+    
+}
+
+/* Body styles */
+html, body {
+    background-image: url('img/Background.png');
+    background-size: auto;
+    background-position: center;
+    color: white;
+    line-height: 1.6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-divider {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, #9B71F1 0%, #3F3A87 48.08%, #0F0E21 100%);
+    z-index: 9999;
+  }
+
+
+  
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .mission-statement__section h1 {
+    font-size: 1.8rem;
+    color: #D1A6FE;
+    margin-bottom: 50px;
+  }
+
+  .center-wrapper {
+    display: flex;
+    justify-content: center;  
+    align-items: center;                  
+    text-align: center;       
+  }
+
+  .mission-statement__section  p {
+    text-align: center;
+    width: 700px;
+  }
+
+  .moodboard__section-image {
+    width: 100%;
+    height: 100%;
+  }
+
+.moodboard__section h1 {
+    font-size: 1.8rem;
+    color: #D1A6FE;
+    margin-bottom: 50px;
+}
+
+.company-overview__section h1 {
+    font-size: 1.8rem;
+    color: #D1A6FE;
+    margin-bottom: 50px;
+}
+
+.meetourteam__section h1 {
+    font-size: 1.8rem;
+    color: #D1A6FE;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.team-images__section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.image-swap {
+    position: relative;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+  }
+  
+  .image-swap img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease;
+  }
+
+  .image-swap .team-image__hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  
+  .image-swap:hover .team-image__hover {
+    opacity: 1;
+  }
+
+  .team-image__hover {
+    width: 150%;
+    height: auto;
+  }
+  
+  .image-swap:hover .team-image__default {
+    opacity: 0;
+  }
+
+  .references__section {
+    font-size: 1.8rem;
+    color: #D1A6FE;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;
+  }
+  
+.homepage-content__video {
+    width: 100%;
+    height: 100%;
+  }
+  
+/* Header styles */
+header {
+    background-color: #0F0E21;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+  
+
+.logo img {
+    height: 50px; /* Adjust based on your preference */
+    width: auto; /* Maintains aspect ratio */
+    max-width: 400px; /* Prevents logo from being too wide */
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header p {
+    font-size: 0.9rem;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+
+/* Features section */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-card {
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature-icon {
+    background-color: #3498db;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* CTA section */
+.cta {
+    background-color: #3498db;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+    border-radius: 8px;
+    color: white;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    color: #3498db;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.05);
+}
+
+/* Footer styles */
+
+.footer-section {
+    height: 15vh;
+    width: 100vw;
+    background-color: #412F65;
+    padding: 20px;
+    display: flex;
+}
+
+.footer-section__content {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5x;
+    text-align: right;
+    font-size: 16px;
+    color: #FFFEFC;
+    flex: 1;
+}
+
+.footer-section__copyright {
+    flex: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-section__copyright-linkologo {
+    width: 150px;
+    height: auto;
+}
+
+.footer-section__copyright {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/*---------------Logo-----------------*/
+.logo-section {
+    max-width: 1200px;
+    height: auto;
+    align-items: center;
+    
+}
+.section-divider {
+        background: #C2FF3E;
+        width: 1136px;
+        height: 2px;
+        margin: 2rem 0;
+}
+
+.logosection-img {
+        max-width: 100%;
+        height: auto;          
+        display: block;
+        margin: 2rem auto;      
+        border-radius: 8px;
+}
+
+
+
+
+/*-----------------End of logo section--------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------Colour section-xiuzi---------------*/
+
+.colourpage {
+    max-width: 1200px;
+    height: auto;
+    align-items: center;
+}
+
+.PrimaryColours {
+    display: flex;
+    flex-direction: row;   
+    justify-content: center;  
+    gap: 2rem;            
+    flex-wrap: wrap;  
+    padding: 1rem 0;
+  }
+  
+  .color-block {
+    text-align: center;
+  }
+  
+  .colour-label{
+ color: #FFF;
+font-family: Lexend;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; 
+  }
+
+  .primary-colour-label {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .primary-colour-label span {
+    font-size: 1rem;
+    display: block;
+  }
+
+.color-example {
+    max-width: 995px;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 10px;
+  }
+
+  .button-container {
+    width: 904px;
+    margin: 0 auto; 
+  }
+  
+  .button-img {
+    width: 383px;
+    height: 150px;
+    margin: 10px 68px 37px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  
+  
+
+/*-----------------end of colour section--------*/
